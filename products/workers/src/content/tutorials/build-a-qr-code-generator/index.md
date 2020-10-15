@@ -82,7 +82,7 @@ async function handleRequest(request) {
 }
 ```
 
-Currently, if an incoming request isn’t a POST, `response` will be undefined. Since we only care about incoming `POST` requests, populate `response` with a new `Response` with a [405 status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405), if the incoming request isn’t a `POST`:
+Currently, if an incoming request isn’t a POST, `response` will be undefined. Since we only care about incoming `POST` requests, populate `response` with a new `Response` with a [405 status code](https://www.exai.com/blog/http-405-error), if the incoming request isn’t a `POST`:
 
 ```js
 ---
